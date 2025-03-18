@@ -1,11 +1,9 @@
 public class Main {
     public static void main (String[] args){
-        System.out.println("hi, testing");     
-        System.out.println("Thai Change")   ;        
-        for(int i = 0; i < 100; i ++){
-            System.out.println(i);
-        }     
-        System.out.println("Thai Change");
-        System.out.println("yeah");             
+        int x = 3;     
+        int y = -11;           
+        boolean t = true;        
+        String z = "hello";        
+
     }
 }
