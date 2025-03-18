@@ -1,7 +1,7 @@
 public class Main {
     public static void main (String[] args){
-        int x = 3;     
-        int y = -11;           
+        String str="Allen";
+        int x = 3;              
         boolean t = true;        
         String z = "hello";        
 
