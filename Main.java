@@ -1,9 +1,8 @@
 public class Main {
     public static void main (String[] args){
-        String str="Allen";
-        int x = 3;              
-        boolean t = true;        
-        String z = "hello";        
+      
+        Person brixton = new Person("Brixton", 16, "6' 0", true);
+        System.out.println(brixton.talk());
 
     }
 }
