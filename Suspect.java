@@ -5,8 +5,8 @@ public class Suspect extends Person {
     public Suspect(){
         super();
     }
-    public Suspect(String name, int age, String height, boolean isMale, String alibi, boolean isTheCriminal){
-        super(name, age, height, isMale);
+    public Suspect(String name, int age, String height, boolean isMale, double weight, String alibi, boolean isTheCriminal){
+        super(name, age, height, isMale, weight);
         this.alibi = alibi;
         this.isTheCriminal = isTheCriminal;
     }

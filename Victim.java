@@ -4,8 +4,8 @@ public class Victim extends Person{
     public Victim(){
         super();
     }
-    public Victim(String name, int age, String height, boolean isMale, String story){
-        super(name, age, height, isMale);
+    public Victim(String name, int age, String height, boolean isMale, double weight, String story){
+        super(name, age, height, isMale, weight);
         this.story = story;
     }
 
