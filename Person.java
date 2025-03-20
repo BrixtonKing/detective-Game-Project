@@ -12,6 +12,6 @@ public class Person {
     }
     
     public String talk(){
-        return "not sure yet allen " + name +", "+ height;
+        return "debugging purposes, hi allen: " + name +", "+ height;
     }
 }
