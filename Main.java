@@ -3,6 +3,7 @@ public class Main {
       
         Person brixton = new Person("Brixton", 16, "6' 0", true);
         System.out.println(brixton.talk());
+        System.out.println(brixton.description());
 
     }
 }
