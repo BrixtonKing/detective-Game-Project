@@ -1,7 +1,9 @@
 public class Suspect extends Person {
+    // instance variables
     private String alibi;
     private boolean isTheCriminal;
     
+    // blank and real constructor
     public Suspect(){
         super();
     }
@@ -10,6 +12,8 @@ public class Suspect extends Person {
         this.alibi = alibi;
         this.isTheCriminal = isTheCriminal;
     }
+
+    // getters and setters
     public String hearAlibi(){
         return alibi;
     }

@@ -1,6 +1,7 @@
 public class Victim extends Person{
     private String story;
 
+    // blank constructor + normal constructor
     public Victim(){
         super();
     }
