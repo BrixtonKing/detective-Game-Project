@@ -6,6 +6,7 @@ public class Person {
     protected String height;
     protected boolean isMale;
     protected double weight;
+    //protected static int personCount;
 
     // blank constructor + normal constructor
     public Person (){}
@@ -15,6 +16,7 @@ public class Person {
         this.height = height;
         this.isMale = isMale;
         this.weight = weight;
+        //personCount++;
     }
     
     // talk is rly js to be overridden

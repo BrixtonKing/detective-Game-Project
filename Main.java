@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+// for final project we can add onto this by adding visuals and using the api key from chatgpt to create the storys
 public class Main {
     public static void main (String[] args){
 
