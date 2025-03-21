@@ -20,4 +20,8 @@ public class Person {
     public String description(){
         return "this person is named: " + name +"\nhas a age of " + age + "\nhas a height of " + height + "\nis male is: " + height + "\nthey weight in at: " + weight + "lbs";
     }
+
+    public String toString(){
+        return "test";
+    }
 }
