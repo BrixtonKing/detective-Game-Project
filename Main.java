@@ -11,5 +11,8 @@ public class Main {
         // uses the to string from person
         System.out.println(banana);
 
+        Player allen = new Player();
+        allen.investigate(brixton);
+
     }
 }
