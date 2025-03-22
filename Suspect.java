@@ -17,6 +17,9 @@ public class Suspect extends Person {
     public String hearAlibi(){
         return alibi;
     }
+    public boolean getIsCriminal(){
+        return isTheCriminal;
+    }
 
     @Override
     public String talk(){

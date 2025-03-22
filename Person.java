@@ -18,6 +18,27 @@ public class Person {
         this.weight = weight;
         //personCount++;
     }
+
+        // Getter methods
+        public String getName() {
+            return name;
+        }
+    
+        public int getAge() {
+            return age;
+        }
+    
+        public String getHeight() {
+            return height;
+        }
+    
+        public boolean isMale() {
+            return isMale;
+        }
+    
+        public double getWeight() {
+            return weight;
+        }
     
     // talk is rly js to be overridden
     public String talk(){

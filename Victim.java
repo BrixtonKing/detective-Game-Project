@@ -9,6 +9,8 @@ public class Victim extends Person{
         super(name, age, height, isMale, weight);
         this.story = story;
     }
+    
+    public String hearStory(){return story;}
 
     @Override
     public String talk(){
