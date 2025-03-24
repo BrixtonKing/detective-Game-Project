@@ -57,25 +57,25 @@ public class Player extends Person{
             int selected = Tools.validatedInput(userInput, 4);
 
             // "investigation loop", c is short for continue
-        boolean c = true;
-        while(c == true){
-            switch(selected){
-                case 1:
-                    System.out.println(x.hearStory());
-                    break;
-                // im not sure if we need/want to be able to get suspect discription
-                // if you read this talk to me about the case 2 here and we can decide togeher
-                case 2:
-                    System.out.println(x.description());
-                    break;
-                case 3:
-                    System.out.println(x.talk());
-                    break;
-                case 4:
-                    System.out.println("smth about it being over");
-                    c = false;
-                    
-            }
+            boolean c = true;
+            while(c == true){
+                switch(selected){
+                    case 1:
+                        System.out.println(x.hearStory());
+                        break;
+                    // im not sure if we need/want to be able to get suspect discription
+                    // if you read this talk to me about the case 2 here and we can decide togeher
+                    case 2:
+                        System.out.println(x.description());
+                        break;
+                    case 3:
+                        System.out.println(x.talk());
+                        break;
+                    case 4:
+                        System.out.println("smth about it being over");
+                        c = false;
+                        
+                }
             
             if(selected!=4){         
                 // bad phrasing   

@@ -6,7 +6,10 @@ public class Main {
         // testing code
         Person brixton = new Person("Brixton", 16, "6'0", true, 100000.1);
         Suspect mason = new Suspect("mason", 15, "5'10", false, 2000, "i was walking my pet fish", false);
-        detectiveAgency tester = new detectiveAgency(10);
+        Player allen = new Player();
+
+        detectiveAgency tester = new detectiveAgency(5, allen);
+
         Victim Eleanor = new Victim("Eleanor Whitmore", 42,"5;7", false, 145, 
         "I was investigating a political scandal and I believe someone tried to silence me. Someone attempted to strangle me with a pearl necklace, it didn't work. I fought back, and that guy ran away. I remember seeing a gold cufflink drop during the attack.");
         //Suspect Senator = new Suspect("Harold Vance", 57,"6'0",true,195, "I was in the ballroom giving a speech");
@@ -16,14 +19,16 @@ public class Main {
         // uses the to string from person
         System.out.println(banana);
 
-        Player allen = new Player();
+        tester.selectInvestigate();
+        
 
-        allen.investigateVictim(Eleanor);
-
-        allen.investigateSuspect(mason);
-        System.out.println(allen.accuse(mason));
+        // investigate victim and suspect work
+        //allen.investigateVictim(Eleanor);
+        //allen.investigateSuspect(mason);
+        //System.out.println(allen.accuse(mason));
 
         // real code/important to project
 
     }
+    
 }
