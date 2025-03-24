@@ -14,10 +14,11 @@ public class detectiveAgency{
         this.suspectNumber = suspectNumber;
         Suspect temp = null;
         for(int i = 0; i < suspectNumber; i++){
-            // in the future the part on both lines that says new Suspect() will change
-            // however, they both need to be changed to the exact same thing
-            suspects.add(new Suspect());
-            people.add(new Suspect());
+            suspects.add(new Suspect("Harold Vance", 57,"6'0",true,195, "I was in the ballroom giving a speech",true));
+            suspects.add(new Suspect("Olivia Hawthorne(Former Employee)",34,"5'6",false,140,"I was outside terrace during the poinsoning",true));
+            suspects.add(new Suspect("Lucian Devereux (Mansion Owner)",52,"5'11",true,180,"I was in the wine cellar giving a private tour",true));
+            suspects.add(new Suspect("Isabella Rosetti (Socialite)",29,"5'8",false,135,"I was in the powder room at the time",true));
+            suspects.add(new Suspect("Edwin Carlisle (Cousin)",36,"5'10",true,175,"I was in the billiards room playing a game",true));
         }
         // change to make it so its the real victim
         people.add(new Victim());
