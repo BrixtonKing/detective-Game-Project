@@ -13,15 +13,67 @@ public class detectiveAgency{
         this.player = player;
         this.suspectNumber = suspectNumber;
         Suspect temp = null;
+        int temp1 = (int)Math.random()*5+1;
+
+        // hard coded victims
+        Person v1 = new Victim();
+        Person v2 = new Victim();
+        Person v3 = new Victim();
+        Person v4 = new Victim();
+        Person v5 = new Victim();
+
+        // hard coded suspects
+        Person s1 = new Suspect();
+        Person s2 = new Suspect();
+        Person s3 = new Suspect();
+        Person s4 = new Suspect();
+        Person s5 = new Suspect();
+        
+        // chat gpt list of random suspects
+        Person[][] fakeCriminals = new Person[5][6];
+
+
+        // the victim has to be the last thing
+        if(temp1 == 1){
+            for(int i = 0; i < fakeCriminals[0].length; i++){
+                people.add(fakeCriminals[temp1-1][i]);
+            }
+            people.add(s1); 
+            people.add(v1); 
+        }
+        if(temp1 == 2){
+            for(int i = 0; i < fakeCriminals[0].length; i++){
+                people.add(fakeCriminals[temp1-1][i]);
+            }
+            people.add(s2); 
+            people.add(v2); 
+        }
+        if(temp1 == 3){
+            for(int i = 0; i < fakeCriminals[0].length; i++){
+                people.add(fakeCriminals[temp1-1][i]);
+            }
+            people.add(s3); 
+            people.add(v3); 
+        }
+        if(temp1 == 4){
+            for(int i = 0; i < fakeCriminals[0].length; i++){
+                people.add(fakeCriminals[temp1-1][i]);
+            }
+            people.add(s4); 
+            people.add(v4); 
+        }
+        if(temp1 == 5){
+            for(int i = 0; i < fakeCriminals[0].length; i++){
+                people.add(fakeCriminals[temp1-1][i]);
+            }
+            people.add(s5); 
+            people.add(v5); 
+        }
+
         for(int i = 0; i < suspectNumber; i++){
-            suspects.add(new Suspect("Harold Vance", 57,"6'0",true,195, "I was in the ballroom giving a speech",true));
-            suspects.add(new Suspect("Olivia Hawthorne(Former Employee)",34,"5'6",false,140,"I was outside terrace during the poinsoning",true));
-            suspects.add(new Suspect("Lucian Devereux (Mansion Owner)",52,"5'11",true,180,"I was in the wine cellar giving a private tour",true));
-            suspects.add(new Suspect("Isabella Rosetti (Socialite)",29,"5'8",false,135,"I was in the powder room at the time",true));
-            suspects.add(new Suspect("Edwin Carlisle (Cousin)",36,"5'10",true,175,"I was in the billiards room playing a game",true));
         }
         // change to make it so its the real victim
-        people.add(new Victim());
+        //people.add(new Victim());
     }
 
     // getters
