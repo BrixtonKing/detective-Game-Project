@@ -16,14 +16,14 @@ public class detectiveAgency{
         int temp1 = (int)Math.random()*5+1;
 
         // hard coded victims
-        Person v1 = new Victim();
+        Person v1 = new Victim("Mickey Mice",56,"5'0",true,150,"I was eating my cheese in my bedroom, facing the wall. I heard the door opened downstair, and the TV got stolen!","I got devorced from Minney mice and my TV got stolen, I am soooo sad");
         Person v2 = new Victim();
         Person v3 = new Victim();
         Person v4 = new Victim();
         Person v5 = new Victim();
 
         // hard coded suspects
-        Person s1 = new Suspect();
+        Person s1 = new Suspect("Minney Mice",50,"4'6",false,120,"");
         Person s2 = new Suspect();
         Person s3 = new Suspect();
         Person s4 = new Suspect();

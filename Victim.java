@@ -9,7 +9,6 @@ public class Victim extends Person{
     public Victim(String name, int age, String height, boolean isMale, double weight, String story, String talkValue){
         super(name, age, height, isMale, weight);
         this.story = story;
-        this.talkValue = talkValue;
     }
     
     public String hearStory(){return story;}
