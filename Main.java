@@ -5,10 +5,10 @@ public class Main {
 
         // testing code
         Person brixton = new Person("Brixton", 16, "6'0", true, 100000.1);
-        Suspect mason = new Suspect("mason", 15, "5'10", false, 2000, "i was walking my pet fish", false);
+        //Suspect mason = new Suspect("mason", 15, "5'10", false, 2000, "i was walking my pet fish", false);
         Player allen = new Player();
 
-        detectiveAgency tester = new detectiveAgency(5, allen);
+        detectiveAgency tester = new detectiveAgency(7, allen);
 
         // line 9 is needed becuase the arraylist is made as part fo the agency's constructor
         ArrayList<Suspect> banana = tester.getSuspects();
