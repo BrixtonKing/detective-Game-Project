@@ -51,6 +51,6 @@ public class Person {
     }
 
     public String toString(){
-        return "test";
+        return name;
     }
 }

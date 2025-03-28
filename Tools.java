@@ -23,5 +23,12 @@ public class Tools {
         int y = Integer.valueOf(x);
         return y;
     }
+    public static boolean userContinues(String userInput){
+        int temp = Tools.validatedInput(userInput, 2);
+        if(temp == 1){
+            return true;
+        }
+        return false;
+    }
 
 }

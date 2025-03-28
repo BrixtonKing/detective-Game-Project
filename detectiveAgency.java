@@ -111,7 +111,6 @@ fakeCriminals[2][5] = new Suspect("Bumi", 75, "5'7", true, 200,
         fakeCriminals[4][5] = new Suspect();
 
     for(int i = 0; i<fakeCriminals[0].length; i++){System.out.print(fakeCriminals[0][i] + " ");}
-
         // the victim has to be the last thing
         if(temp1 == 1){
             for(int i = 0; i < fakeCriminals[0].length; i++){
@@ -142,6 +141,7 @@ fakeCriminals[2][5] = new Suspect("Bumi", 75, "5'7", true, 200,
             people.add(randomIndex, s3); 
             suspects.add(randomIndex, (Suspect)s3);
             people.add(v3); 
+            
         }
         if(temp1 == 4){
             for(int i = 0; i < fakeCriminals[0].length; i++){
@@ -174,27 +174,32 @@ fakeCriminals[2][5] = new Suspect("Bumi", 75, "5'7", true, 200,
     public ArrayList<Suspect> getSuspects(){
         return suspects;
     }
+   
+    public ArrayList<Person> getPeopleList(){
+        return people;
+    }
     
     // call this when the player wants to investigate someone
     public void selectInvestigate(){
         // temp variables, doesnt matter
         int j = 1;
         Scanner fellInLuv = new Scanner(System.in);
+        System.out.println("\n" + people);
 
         System.out.println("Who would you like the investigate:");
         // useable no matter the length of the suspect length 
         for(int i = 0; i < suspectNumber; i++){
             System.out.println("Suspect #" + j + ", Name: " + suspects.get(i).getName());
-            j = i+1;
+            j++;
         }
         System.out.println("The Victim (option #"+ j + "), Name: " + people.get(people.size()-1).getName());
         String userInput = fellInLuv.nextLine();
-        int selected = Tools.validatedInput(userInput, suspectNumber);
-        if(people.get(selected) instanceof Suspect){
-            player.investigateSuspect((Suspect)people.get(selected));
+        int selected = Tools.validatedInput(userInput, suspectNumber+1);
+        if(people.get(selected-1) instanceof Suspect){
+            player.investigateSuspect((Suspect)people.get(selected-1));
         }
         else{
-            player.investigateVictim((Victim)people.get(selected));
+            player.investigateVictim((Victim)people.get(selected-1));
         }
     }
 }

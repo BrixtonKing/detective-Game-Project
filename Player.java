@@ -42,7 +42,7 @@ public class Player extends Person{
             
             if(selected!=4){         
                 // bad phrasing   
-                System.out.println("*inner thoughts what else to ask*");
+                System.out.println("What would you like to do\n1. Hear their story\n2. Get physical details\n3. talk with them\n4. finish investigation of current suspect");
                 userInput = scanner1.nextLine();
                 selected = Tools.validatedInput(userInput, 4);
             }
@@ -52,7 +52,7 @@ public class Player extends Person{
         public void investigateVictim(Victim x){
             System.out.println("\nsmth intresting about investgating or smth like that");
             Scanner scanner1 = new Scanner(System.in);
-            System.out.println("What would you like to do\n1. Hear their story\n2. Get physical details\n3. talk with them\n4. finish investigation");
+            System.out.println("What would you like to do\n1. Hear their story\n2. Get physical details\n3. talk with them\n4. finish investigation of current suspect");
             String userInput = scanner1.nextLine();
             int selected = Tools.validatedInput(userInput, 4);
 
@@ -79,7 +79,7 @@ public class Player extends Person{
             
             if(selected!=4){         
                 // bad phrasing   
-                System.out.println("*inner thoughts what else to ask*");
+                System.out.println("\nWhat would you like to do\n1. Hear their story\n2. Get physical details\n3. talk with them\n4. finish investigation of current suspect");
                 userInput = scanner1.nextLine();
                 selected = Tools.validatedInput(userInput, 4);
             }
