@@ -20,14 +20,14 @@ public class detectiveAgency{
         Person v1 = new Victim("Mickey Mice",56,"5'0",true,150,"It was about 11:30pm and I was eating my cheese in my bedroom, facing the wall. I heard the door opened downstair, and the TV got stolen!","I just finished wrapping up the divorce with Minney mice and my TV got stolen, I am soooo sad");
         Person v2 = new Victim("Mark", 20, "6' 3", true, 180, "I was at my Sunday Computer Science 101 Class, but while I was gone my home was broken into! When I came back someone had stolen my cat named Kitty", "I miss my cat so bad so much... please help me get Kitty back");
         Person v3 = new Victim("Aang", 15, "4' 10", true, 100, "I was walking my dog and this tall man in a mask ran up to me and grabbed the leash from my hands and ran away.", "I am really sad I miss my dog Appa... please help me get him back");
-        Person v4 = new Victim();
+        Person v4 = new Victim("Mummy Pig",31,"5'5",false,140,"I recently have another baby pig with Daddy Pig. Yesterday, I have my baby born, but today's morning, my baby got stolen!","Help Me! I want my baby back.");
         Person v5 = new Victim();
 
         // hard coded suspects
         Person s1 = new Suspect("Minney Mice", 50, "4'6", false, 120, "I spent the whole evening arguing with my divorce lawyer about paperwork. I barely had the energy to get home, let alone go out stealing.", true, "Look, I may be mad at Mickey, but I’d rather never see him again than waste my time stealing his junk.");
         Person s2 = new Suspect("Cecil", 63, "5' 7", true, 150, "I was at my job at Chick-fil-a working when you said the crime happened", true, "I love cats, but I would never see one. I would be so sad if anyone took them from me. Also my Alibi is great");
         Person s3 = new Suspect("Zuko", 25, "6' 5", true, 160, "I was at the gym working out with Azula", true, "Why would I want to steal a little kids dog? That is very dumb");
-        Person s4 = new Suspect();
+        Person s4 = new Suspect("Miss Rabit",26,"5'3",false,120,"I have several jobs. Although I am the nurse that took care of Mummy Pig, but during that night, I was driving bus.",true,"Why would I do such things that will be bad for me, I have the metal about the best worker from the queen");
         Person s5 = new Suspect();
         
         // chat gpt list of random suspects
@@ -95,8 +95,10 @@ fakeCriminals[2][5] = new Suspect("Bumi", 75, "5'7", true, 200,
     false, "Stealing a dog? Pfft! If I wanted one, I’d just challenge it to a game of ‘Who Can Dig the Biggest Hole’ and win it fair and square!");
 
         // Fourth row / scenario 4 ()
-        fakeCriminals[3][0] = new Suspect();
-        fakeCriminals[3][1] = new Suspect();
+        fakeCriminals[3][0] = new Suspect("Daddy Pig",34,"6'0",true,200,
+            "I was working on a new program all nights after I go back home from the hospital", false,"Why would I stole my own baby? It is ridiculous.");
+        fakeCriminals[3][1] = new Suspect("Peppa Pigs", 12, "3'0",false,
+            "I was playing on Happy Mrs. Chicken after I go back home from the hospital.",false,"She is My MUM!!!!!");
         fakeCriminals[3][2] = new Suspect();
         fakeCriminals[3][3] = new Suspect();
         fakeCriminals[3][4] = new Suspect();
