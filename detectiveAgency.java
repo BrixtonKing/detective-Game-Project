@@ -14,7 +14,7 @@ public class detectiveAgency{
         this.suspectNumber = suspectNumber;
         Suspect temp = null;
         // int temp1 = (int)Math.random()*5+1;
-        int temp1 = 3;
+        int temp1 = 4;
 
         // hard coded victims
         Person v1 = new Victim("Mickey Mice",56,"5'0",true,150,"It was about 11:30pm and I was eating my cheese in my bedroom, facing the wall. I heard the door opened downstair, and the TV got stolen!","I just finished wrapping up the divorce with Minney mice and my TV got stolen, I am soooo sad");
@@ -97,12 +97,11 @@ fakeCriminals[2][5] = new Suspect("Bumi", 75, "5'7", true, 200,
         // Fourth row / scenario 4 ()
         fakeCriminals[3][0] = new Suspect("Daddy Pig",34,"6'0",true,200,
             "I was working on a new program all nights after I go back home from the hospital", false,"Why would I stole my own baby? It is ridiculous.");
-        fakeCriminals[3][1] = new Suspect("Peppa Pigs", 12, "3'0",false,
-            "I was playing on Happy Mrs. Chicken after I go back home from the hospital.",false,"She is My MUM!!!!!");
-        fakeCriminals[3][2] = new Suspect();
-        fakeCriminals[3][3] = new Suspect();
-        fakeCriminals[3][4] = new Suspect();
-        fakeCriminals[3][5] = new Suspect();
+        fakeCriminals[3][1] = new Suspect("Peppa Pigs", 12, "3'0",false, 30, "I was playing on Happy Mrs. Chicken after I go back home from the hospital.",false,"She is My MUM!!!!!");
+        fakeCriminals[3][2] = new Suspect("George", 1, "1'0", true, 1, "He is a baby... he cannot speak english", false, "He is a baby... he cannot speak english");
+        fakeCriminals[3][3] = new Suspect("Suzy Sheep", 10, "3' 1", false, 30, "I was playing with Pedro Pony at the park!", false, "I hope Mummy Pig can get her baby back... it is so sad");
+        fakeCriminals[3][4] = new Suspect("Pedro Pony", 9, "2' 11", true, 28, "I was playing with Suzy Sheep at the park", false, "Who is Mummy Pig? My mummy is a horse");
+        fakeCriminals[3][5] = new Suspect("Mr. Bull",45, "7' 0", true, 500, "I just finished my work and I was taking the bus that Ms. Rabbit was driving", false, "Oh dear... I hope Mummy Pig can get her baby back. What a tragic tale");
         
         // Fifth row / scenario 5 ()
         fakeCriminals[4][0] = new Suspect();
@@ -151,9 +150,9 @@ fakeCriminals[2][5] = new Suspect("Bumi", 75, "5'7", true, 200,
                 suspects.add((Suspect)fakeCriminals[temp1-1][i]);
             }
             int randomIndex = (int)(Math.random()*people.size());
-            people.add(randomIndex, s1); 
-            suspects.add(randomIndex, (Suspect)s1);
-            people.add(v1); 
+            people.add(randomIndex, s4); 
+            suspects.add(randomIndex, (Suspect)s4);
+            people.add(v4); 
         }
         if(temp1 == 5){
             for(int i = 0; i < fakeCriminals[0].length; i++){
