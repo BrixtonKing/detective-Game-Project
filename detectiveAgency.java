@@ -21,14 +21,14 @@ public class detectiveAgency{
         Person v2 = new Victim("Mark", 20, "6' 3", true, 180, "I was at my Sunday Computer Science 101 Class, but while I was gone my home was broken into! When I came back someone had stolen my cat named Kitty", "I miss my cat so bad so much... please help me get Kitty back");
         Person v3 = new Victim("Aang", 15, "4' 10", true, 100, "I was walking my dog and this tall man in a mask ran up to me and grabbed the leash from my hands and ran away.", "I am really sad I miss my dog Appa... please help me get him back");
         Person v4 = new Victim("Mummy Pig",31,"5'5",false,140,"I recently have another baby pig with Daddy Pig. Yesterday, I have my baby born, but today's morning, my baby got stolen!","Help Me! I want my baby back.");
-        Person v5 = new Victim();
+        Person v5 = new Victim("Mr. Thai", 99, "5' 10", true, 130, "When I came back to school on monday somebody stole all of the FRQs", "Please help me find the FRQs or else everyone will have to retake them");
 
         // hard coded suspects
         Person s1 = new Suspect("Minney Mice", 50, "4'6", false, 120, "I spent the whole evening arguing with my divorce lawyer about paperwork. I barely had the energy to get home, let alone go out stealing.", true, "Look, I may be mad at Mickey, but I’d rather never see him again than waste my time stealing his junk.");
         Person s2 = new Suspect("Cecil", 63, "5' 7", true, 150, "I was at my job at Chick-fil-a working when you said the crime happened", true, "I love cats, but I would never see one. I would be so sad if anyone took them from me. Also my Alibi is great");
         Person s3 = new Suspect("Zuko", 25, "6' 5", true, 160, "I was at the gym working out with Azula", true, "Why would I want to steal a little kids dog? That is very dumb");
         Person s4 = new Suspect("Miss Rabit",26,"5'3",false,120,"I have several jobs. Although I am the nurse that took care of Mummy Pig, but during that night, I was driving bus.",true,"Why would I do such things that will be bad for me, I have the metal about the best worker from the queen");
-        Person s5 = new Suspect();
+        Person s5 = new Suspect("Allen", 16, "6' 0", true, 198.41,"I was studying for AP Biology at home", true, "I did very bad on the FRQ... much worse then Brixton but, I wouldnt steal it");
         
         // chat gpt list of random suspects
         Person[][] fakeCriminals = new Person[5][6];
@@ -106,10 +106,10 @@ fakeCriminals[2][5] = new Suspect("Bumi", 75, "5'7", true, 200,
         // Fifth row / scenario 5 ()
         fakeCriminals[4][0] = new Suspect();
         fakeCriminals[4][1] = new Suspect();
-        fakeCriminals[4][2] = new Suspect();
-        fakeCriminals[4][3] = new Suspect();
-        fakeCriminals[4][4] = new Suspect();
-        fakeCriminals[4][5] = new Suspect();
+        fakeCriminals[4][2] = new Suspect("Sumedh", 16, "5' 11", true, 160, "I was studying with Brixton at the library", false, "I prepared lots for the FRQ, I hope I dont have to redo it now");
+        fakeCriminals[4][3] = new Suspect("Brixton", 16, "6' 1", true, 210, "I was with Sumedh at the library", false, "I did very good on the FRQ... why would I steal them?");
+        fakeCriminals[4][4] = new Suspect("Maurya", 16, "5' 5", true, 160, "I was at the gym with Kedar", false, "I hope you can find the FRQs, I would hate to re do it");
+        fakeCriminals[4][5] = new Suspect("Kedar", 16, "5' 8", true, 130, "I was at the gym with Maurya", true, "Why would somebody want to steal the FRQs?");
 
     for(int i = 0; i<fakeCriminals[0].length; i++){System.out.print(fakeCriminals[0][i] + " ");}
         // the victim has to be the last thing
