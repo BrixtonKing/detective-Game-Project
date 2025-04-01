@@ -15,6 +15,6 @@ public class Victim extends Person{
 
     @Override
     public String talk(){
-        return story;
+        return talkValue;
     }
 }

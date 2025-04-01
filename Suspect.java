@@ -12,6 +12,7 @@ public class Suspect extends Person {
         super(name, age, height, isMale, weight);
         this.alibi = alibi;
         this.isTheCriminal = isTheCriminal;
+        this.talkValue = talkValue;
     }
 
     // getters and setters

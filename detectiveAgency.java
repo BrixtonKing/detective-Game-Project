@@ -104,12 +104,12 @@ fakeCriminals[2][5] = new Suspect("Bumi", 75, "5'7", true, 200,
         fakeCriminals[3][5] = new Suspect("Mr. Bull",45, "7' 0", true, 500, "I just finished my work and I was taking the bus that Ms. Rabbit was driving", false, "Oh dear... I hope Mummy Pig can get her baby back. What a tragic tale");
         
         // Fifth row / scenario 5 ()
-        fakeCriminals[4][0] = new Suspect();
-        fakeCriminals[4][1] = new Suspect();
-        fakeCriminals[4][2] = new Suspect("Sumedh", 16, "5' 11", true, 160, "I was studying with Brixton at the library", false, "I prepared lots for the FRQ, I hope I dont have to redo it now");
-        fakeCriminals[4][3] = new Suspect("Brixton", 16, "6' 1", true, 210, "I was with Sumedh at the library", false, "I did very good on the FRQ... why would I steal them?");
-        fakeCriminals[4][4] = new Suspect("Maurya", 16, "5' 5", true, 160, "I was at the gym with Kedar", false, "I hope you can find the FRQs, I would hate to re do it");
-        fakeCriminals[4][5] = new Suspect("Kedar", 16, "5' 8", true, 130, "I was at the gym with Maurya", true, "Why would somebody want to steal the FRQs?");
+        fakeCriminals[4][0] = new Suspect("Sumedh", 16, "5' 11", true, 160, "I was studying with Brixton at the library", false, "I prepared lots for the FRQ, I hope I dont have to redo it now");
+        fakeCriminals[4][1] = new Suspect("Brixton", 16, "6' 1", true, 210, "I was with Sumedh at the library", false, "I did very good on the FRQ... why would I steal them?");
+        fakeCriminals[4][2] = new Suspect("Maurya", 16, "5' 5", true, 160, "I was at the gym with Kedar", false, "I hope you can find the FRQs, I would hate to re do it");
+        fakeCriminals[4][3] = new Suspect("Kedar", 16, "5' 8", true, 130, "I was at the gym with Maurya", true, "Why would somebody want to steal the FRQs?");
+        fakeCriminals[4][4] = new Suspect("Ollie Gu",15,"5'11",true,135,"I was programming for my project that are due tomorrow.",false,"I literaly have no time to do things like stolen the FRQ.");
+        fakeCriminals[4][5] = new Suspect("Mr.Thai's girlfriend",21,"5'5",false,125,"I was working that time",false,"Why would I steal my boyfriend's FRQ quiz for his students?");
 
     for(int i = 0; i<fakeCriminals[0].length; i++){System.out.print(fakeCriminals[0][i] + " ");}
         // the victim has to be the last thing
