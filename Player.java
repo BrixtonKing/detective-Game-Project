@@ -96,7 +96,10 @@ public class Player extends Person{
         }
         public boolean selectAndAccuse(String x, detectiveAgency DEA){
             ArrayList<Suspect> suspects = DEA.getSuspects();
-            int chosen = Tools.validatedInput(x, suspects.size());
+            //System.out.println(suspects);
+            int chosen = Tools.validatedInput(x, suspects.size())-1;
+            //System.out.println(chosen);
+            //System.out.println(suspects.get(chosen));
             return accuse(suspects.get(chosen));
         }
 
