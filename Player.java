@@ -16,9 +16,9 @@ public class Player extends Person{
 
     public void investigateSuspect(Suspect x){
         // the next 5 lines get the input from user selection and validates it (continued to be reused)
-        System.out.println("\nsmth intresting about investgating or smth like that");
+        System.out.println("\nInvestigating: " + x.getName());
         Scanner scanner1 = new Scanner(System.in);
-        System.out.println("What would you like to do\n1. Hear their alibi\n2. Get physical details\n3. chit-chat with them\n4. finish investigation");
+        System.out.println("What would you like to do\n1. Hear their alibi\n2. Get physical details\n3. chit-chat with them\n4. finish investigation of " + x.getName());
         String userInput = scanner1.nextLine();
         int selected = Tools.validatedInput(userInput, 4);
 
@@ -36,14 +36,14 @@ public class Player extends Person{
                     System.out.println(x.talk());
                     break;
                 case 4:
-                    System.out.println("smth about it being over");
+                    System.out.println("Investigation of " + x.getName() + " is complete... for now");
                     c = false;
                     
             }
             
             if(selected!=4){         
                 // bad phrasing   
-                System.out.println("What would you like to do\n1. Hear their story\n2. Get physical details\n3. talk with them\n4. finish investigation of current suspect");
+                System.out.println("\nWhat would you like to do\n1. Hear their story\n2. Get physical details\n3. talk with them\n4. Finish investigation of " + x.getName());
                 userInput = scanner1.nextLine();
                 selected = Tools.validatedInput(userInput, 4);
             }
@@ -51,9 +51,9 @@ public class Player extends Person{
         }
 
         public void investigateVictim(Victim x){
-            System.out.println("\nsmth intresting about investgating or smth like that");
+            System.out.println("\nInvestigating: " + x.getName());
             Scanner scanner1 = new Scanner(System.in);
-            System.out.println("What would you like to do\n1. Hear their story\n2. Get physical details\n3. talk with them\n4. finish investigation of current suspect");
+            System.out.println("What would you like to do\n1. Hear their story\n2. Get physical details\n3. talk with them\n4. finish investigation of " + x.getName());
             String userInput = scanner1.nextLine();
             int selected = Tools.validatedInput(userInput, 4);
 
@@ -73,14 +73,13 @@ public class Player extends Person{
                         System.out.println(x.talk());
                         break;
                     case 4:
-                        System.out.println("smth about it being over");
+                        System.out.println("Investigation of " + x.getName() + " is completed");
                         c = false;
                         
                 }
             
-            if(selected!=4){         
-                // bad phrasing   
-                System.out.println("\nWhat would you like to do\n1. Hear their story\n2. Get physical details\n3. talk with them\n4. finish investigation of current suspect");
+            if(selected!=4){        
+                System.out.println("\nWhat would you like to do\n1. Hear their story\n2. Get physical details\n3. Talk with them\n4. Finish investigation of " + x.getName());
                 userInput = scanner1.nextLine();
                 selected = Tools.validatedInput(userInput, 4);
             }

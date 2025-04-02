@@ -12,9 +12,13 @@ public class detectiveAgency{
         // basic set up for what will be our arraylist of random suspects
         this.player = player;
         this.suspectNumber = suspectNumber;
-        Suspect temp = null;
-        int temp1 = (int)(Math.random()*5+1);
-        System.out.println(temp1);
+        //Suspect temp = null;
+
+        Scanner scanner4 = new Scanner(System.in);
+        System.out.println("Which of the cases do you want to solve: \n#1, the story of Mickey Mice's stolen TV \n#2, The case of Mark's stolen cat \n#3, The case of Aang's stolen dog \n#4, The case of Mummy pigs stolen baby \n#5, The case of Mr. Thai's stolen FRQs");
+        String tempInput = scanner4.nextLine();
+        int temp1 = Tools.validatedInput(tempInput, 5);
+        //int temp1 = (int)(Math.random()*5+1);
         //int temp1 = 4;
 
         // hard coded victims
@@ -112,7 +116,7 @@ fakeCriminals[2][5] = new Suspect("Bumi", 75, "5'7", true, 200,
         fakeCriminals[4][4] = new Suspect("Ollie Gu",15,"5'11",true,135,"I was programming for my project that are due tomorrow.",false,"I literaly have no time to do things like stolen the FRQ.");
         fakeCriminals[4][5] = new Suspect("Mr.Thai's girlfriend",21,"5'5",false,125,"I was working that time",false,"Why would I steal my boyfriend's FRQ quiz for his students?");
 
-    for(int i = 0; i<fakeCriminals[0].length; i++){System.out.print(fakeCriminals[0][i] + " ");}
+    //for(int i = 0; i<fakeCriminals[0].length; i++){System.out.print(fakeCriminals[0][i] + " ");}
         // the victim has to be the last thing
         if(temp1 == 1){
             for(int i = 0; i < fakeCriminals[0].length; i++){
