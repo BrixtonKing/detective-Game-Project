@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Player extends Person{
@@ -86,12 +87,18 @@ public class Player extends Person{
         }
         }
 
+        // this is lowkey the most unless method of all time
         public boolean accuse(Suspect x){
             if(x.getIsCriminal()){
-                return false;
+                return true;
             }
             else
-                return true;
+                return false;
+        }
+        public boolean selectAndAccuse(String x, detectiveAgency DEA){
+            ArrayList<Suspect> suspects = DEA.getSuspects();
+            int chosen = Tools.validatedInput(x, suspects.size());
+            return accuse(suspects.get(chosen));
         }
 
         

@@ -18,13 +18,22 @@ public class Main {
         //System.out.println(banana);
         boolean continueInvestigations = true;
         Scanner scanner2 = new Scanner(System.in);
+        String userInput = null;
         while(continueInvestigations){
             game.selectInvestigate();
             System.out.println("\nDo you want to keep investigating [type 1], or do you want to accuse [type 2]:");
-            String userInput = scanner2.nextLine();
+            userInput = scanner2.nextLine();
             continueInvestigations = Tools.userContinues(userInput);
         }
-        // accuse here
+        Scanner scanner3 = new Scanner(System.in);
+        game.printAccusable();
+
+        userInput = scanner3.nextLine();
+        boolean won = allen.selectAndAccuse(userInput, game);
+
+        if(won == true){System.out.println("Congratulations, you won and caught the criminal!!!");}
+        else if(won == false){System.out.println("Wow.. I am so disappointed you just imprisoned an innocent person :(");}
+        
     }
     
 }

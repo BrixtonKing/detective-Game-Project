@@ -13,8 +13,9 @@ public class detectiveAgency{
         this.player = player;
         this.suspectNumber = suspectNumber;
         Suspect temp = null;
-        // int temp1 = (int)Math.random()*5+1;
-        int temp1 = 4;
+        int temp1 = (int)(Math.random()*5+1);
+        System.out.println(temp1);
+        //int temp1 = 4;
 
         // hard coded victims
         Person v1 = new Victim("Mickey Mice",56,"5'0",true,150,"It was about 11:30pm and I was eating my cheese in my bedroom, facing the wall. I heard the door opened downstair, and the TV got stolen!","I just finished wrapping up the divorce with Minney mice and my TV got stolen, I am soooo sad");
@@ -160,9 +161,9 @@ fakeCriminals[2][5] = new Suspect("Bumi", 75, "5'7", true, 200,
                 suspects.add((Suspect)fakeCriminals[temp1-1][i]);
             }
             int randomIndex = (int)(Math.random()*people.size());
-            people.add(randomIndex, s1); 
-            suspects.add(randomIndex, (Suspect)s1);
-            people.add(v1); 
+            people.add(randomIndex, s5); 
+            suspects.add(randomIndex, (Suspect)s5);
+            people.add(v5); 
         }
 
         //for(int i = 0; i < suspectNumber; i++){
@@ -201,6 +202,15 @@ fakeCriminals[2][5] = new Suspect("Bumi", 75, "5'7", true, 200,
         }
         else{
             player.investigateVictim((Victim)people.get(selected-1));
+        }
+    }
+    public void printAccusable(){
+        System.out.println("Who would you like the accuse:");
+        // useable no matter the length of the suspect length
+        int j = 1; 
+        for(int i = 0; i < suspectNumber; i++){
+            System.out.println("Suspect #" + j + ", Name: " + suspects.get(i).getName());
+            j++;
         }
     }
 }
