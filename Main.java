@@ -9,7 +9,15 @@ public class Main {
         //Suspect mason = new Suspect("mason", 15, "5'10", false, 2000, "i was walking my pet fish", false);
         Player allen = new Player();
 
-        detectiveAgency game = new detectiveAgency(7, allen);
+        int difficulty=0;
+        System.out.println("Choose Your Game Level:\n1.Easy(3 suspects)\n2.Medium(5 suspects)\n3.Hard(7 suspects)");
+        Scanner scannerLevel = new Scanner(System.in);
+        String input1=scannerLevel.nextLine();
+        int helloWorld = Tools.validatedInput(input1, 3);
+        if(helloWorld==1){difficulty = 3;}
+        if(helloWorld==2){difficulty = 5;}
+        if(helloWorld==3){difficulty = 7;}
+        detectiveAgency game = new detectiveAgency(difficulty, allen);
 
         // line 9 is needed becuase the arraylist is made as part fo the agency's constructor
         ArrayList<Suspect> suspects = game.getSuspects();
