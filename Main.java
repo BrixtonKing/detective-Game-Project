@@ -1,21 +1,22 @@
 import java.util.ArrayList;
 import java.util.Scanner;
 // for final project we can add onto this by adding visuals and using the api key from chatgpt to create the storys
+
+// Mr. Thai feedback 4/17/25: "set the stage" + bug fixxing
+
 public class Main {
     public static void main (String[] args){
 
         // testing code
         Person brixton = new Person("Brixton", 16, "6'0", true, 100000.1);
-        //Suspect mason = new Suspect("mason", 15, "5'10", false, 2000, "i was walking my pet fish", false);
+        
         Player allen = new Player();
 
         detectiveAgency game = new detectiveAgency(7, allen);
 
-        // line 9 is needed becuase the arraylist is made as part fo the agency's constructor
         ArrayList<Suspect> suspects = game.getSuspects();
         ArrayList<Person> people = game.getPeopleList();
-        // uses the to string from person
-        //System.out.println(banana);
+
         boolean continueInvestigations = true;
         Scanner scanner2 = new Scanner(System.in);
         String userInput = null;
