@@ -3,6 +3,11 @@ import java.util.Scanner;
 // for final project we can add onto this by adding visuals and using the api key from chatgpt to create the storys
 
 // Mr. Thai feedback 4/17/25: "set the stage" + bug fixxing
+//      tl;dr, we suck at game dev
+//      perpatrator vs suspect talking choices
+//      "cycling" conversation points
+//      focus on 1 story (invincible)
+//      https://onlnbrd.com/b/HWItNIco
 
 public class Main {
     public static void main (String[] args){

@@ -119,7 +119,7 @@ fakeCriminals[2][5] = new Suspect("Bumi", 75, "5'7", true, 200,
     //for(int i = 0; i<fakeCriminals[0].length; i++){System.out.print(fakeCriminals[0][i] + " ");}
         // the victim has to be the last thing
         if(temp1 == 1){
-            for(int i = 0; i < fakeCriminals[0].length; i++){
+            for(int i = 0; i < suspectNumber-1; i++){
                 people.add(fakeCriminals[temp1-1][i]);
                 suspects.add((Suspect)fakeCriminals[temp1-1][i]);
             }
@@ -129,7 +129,7 @@ fakeCriminals[2][5] = new Suspect("Bumi", 75, "5'7", true, 200,
             people.add(v1); 
         }
         if(temp1 == 2){
-            for(int i = 0; i < fakeCriminals[0].length; i++){
+            for(int i = 0; i < suspectNumber-1; i++){
                 people.add(fakeCriminals[temp1-1][i]);
                 suspects.add((Suspect)fakeCriminals[temp1-1][i]);
             }
@@ -139,7 +139,7 @@ fakeCriminals[2][5] = new Suspect("Bumi", 75, "5'7", true, 200,
             people.add(v2);  
         }
         if(temp1 == 3){
-            for(int i = 0; i < fakeCriminals[0].length; i++){
+            for(int i = 0; i < suspectNumber-1; i++){
                 people.add(fakeCriminals[temp1-1][i]);
                 suspects.add((Suspect)fakeCriminals[temp1-1][i]);
             }
@@ -150,7 +150,7 @@ fakeCriminals[2][5] = new Suspect("Bumi", 75, "5'7", true, 200,
             
         }
         if(temp1 == 4){
-            for(int i = 0; i < fakeCriminals[0].length; i++){
+            for(int i = 0; i < suspectNumber-1; i++){
                 people.add(fakeCriminals[temp1-1][i]);
                 suspects.add((Suspect)fakeCriminals[temp1-1][i]);
             }
@@ -158,9 +158,10 @@ fakeCriminals[2][5] = new Suspect("Bumi", 75, "5'7", true, 200,
             people.add(randomIndex, s4); 
             suspects.add(randomIndex, (Suspect)s4);
             people.add(v4); 
+            
         }
         if(temp1 == 5){
-            for(int i = 0; i < fakeCriminals[0].length; i++){
+            for(int i = 0; i < suspectNumber-1; i++){
                 people.add(fakeCriminals[temp1-1][i]);
                 suspects.add((Suspect)fakeCriminals[temp1-1][i]);
             }
