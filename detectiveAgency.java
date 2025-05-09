@@ -72,11 +72,11 @@ public class detectiveAgency{
        "I was binge-watching a cooking show and attempting to recreate their soufflé. It did not go well. I was cleaning batter off the ceiling all night.", 
        false, "Stealing? No way! The only crime I committed was against that poor soufflé.");       
        fakeCriminals[1][4] = new Suspect("Donald Ferguson", 50, "5'10", true, 190, 
-       "I was stuck on hold with customer service for *three hours*. By the time I got a human, I was too exhausted to commit any crimes.", 
-       false, "If I *had* stolen the cat, I would’ve at least filed the proper paperwork first. But I didn’t. So here we are.");
+       "I was with Amber Bennett  in the bookstore, trying  to find a good book to read.", 
+       false, "If you don't believe it, go ask Amber.");
        fakeCriminals[1][5] = new Suspect("Amber Bennett", 20, "5'5", false, 130, 
-       "I was at the bookstore, minding my business and judging people’s taste in novels.", 
-       false, "Mark seriously thinks I’d steal his cat? Wow. I didn’t realize our friendship was *that* fragile.");
+       "I was at the bookstore with Donald Ferguson, minding my business and judging people’s taste in novels.", 
+       false, "Mark seriously thinks I’d steal his cat? I was with Donald all time.");
 
         
         // Third row / scenario 3 ()
