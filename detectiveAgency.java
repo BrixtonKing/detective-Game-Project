@@ -15,7 +15,7 @@ public class detectiveAgency{
         //Suspect temp = null;
 
         Scanner scanner4 = new Scanner(System.in);
-        System.out.println("Which of the cases do you want to solve: \n#1, the story of Mickey Mice's stolen TV \n#2, The case of Mark's stolen cat \n#3, The case of Aang's stolen dog \n#4, The case of Mummy pigs stolen baby \n#5, The case of Mr. Thai's stolen FRQs");
+        System.out.println("Which of the cases do you want to solve: \n#1, the story of Mickey Mice's stolen TV \n#2, The case of Mark's stolen cat (this is our fleshed out one)\n#3, The case of Aang's stolen dog \n#4, The case of Mummy pigs stolen baby \n#5, The case of Mr. Thai's stolen FRQs");
         String tempInput = scanner4.nextLine();
         int temp1 = Tools.validatedInput(tempInput, 5);
         //int temp1 = (int)(Math.random()*5+1);
@@ -23,14 +23,14 @@ public class detectiveAgency{
 
         // hard coded victims
         Person v1 = new Victim("Mickey Mice",56,"5'0",true,150,"It was about 11:30pm and I was eating my cheese in my bedroom, facing the wall. I heard the door opened downstair, and the TV got stolen!","I just finished wrapping up the divorce with Minney mice and my TV got stolen, I am soooo sad");
-        Person v2 = new Victim("Mark", 20, "6' 3", true, 180, "I was at my Sunday Computer Science 101 Class, but while I was gone my home was broken into! When I came back someone had stolen my cat named Kitty", "I miss my cat so bad so much... please help me get Kitty back");
+        Person v2 = new Victim("Mark", 20, "6' 3", true, 180, "I was at my Sunday Computer Science 101 Class, but while I was gone my home was broken into! When I came back someone had stolen my cat named Kitty", "Please help me get my cat back... I wish I never went to my sunday class");
         Person v3 = new Victim("Aang", 15, "4' 10", true, 100, "I was walking my dog and this tall man in a mask ran up to me and grabbed the leash from my hands and ran away.", "I am really sad I miss my dog Appa... please help me get him back");
         Person v4 = new Victim("Mummy Pig",31,"5'5",false,140,"I recently have another baby pig with Daddy Pig. Yesterday, I have my baby born, but today's morning, my baby got stolen!","Help Me! I want my baby back.");
         Person v5 = new Victim("Mr. Thai", 99, "5' 10", true, 130, "When I came back to school on monday somebody stole all of the FRQs", "Please help me find the FRQs or else everyone will have to retake them");
 
         // hard coded suspects
         Person s1 = new Suspect("Minney Mice", 50, "4'6", false, 120, "I spent the whole evening arguing with my divorce lawyer about paperwork. I barely had the energy to get home, let alone go out stealing.", true, "Look, I may be mad at Mickey, but I’d rather never see him again than waste my time stealing his junk.");
-        Person s2 = new Suspect("Cecil", 63, "5' 7", true, 150, "I was at my job at Chick-fil-a working when you said the crime happened", true, "I love cats, but I would never see one. I would be so sad if anyone took them from me. Also my Alibi is great");
+        Person s2 = new Suspect("Cecil", 63, "5' 7", true, 150, "I was at my job at Chick-fil-a working at the time mark said the crime happened", true, "I love cats, but I would never see one. I would be so sad if anyone took them from me. Also my story is great and for sure true");
         Person s3 = new Suspect("Zuko", 25, "6' 5", true, 160, "I was at the gym working out with Azula", true, "Why would I want to steal a little kids dog? That is very dumb");
         Person s4 = new Suspect("Miss Rabit",26,"5'3",false,120,"I have several jobs. Although I am the nurse that took care of Mummy Pig, but during that night, I was driving bus.",true,"Why would I do such things that will be bad for me, I have the metal about the best worker from the queen");
         Person s5 = new Suspect("Allen", 16, "6' 0", true, 198.41,"I was studying for AP Biology at home", true, "I did very bad on the FRQ... much worse then Brixton but, I wouldnt steal it");
@@ -60,16 +60,16 @@ public class detectiveAgency{
 
        // Second row / scenario 2 (Mark's Cat Theft Case)
        fakeCriminals[1][0] = new Suspect("Nolan Grayson", 45, "6'2", true, 210, 
-       "I was in my backyard, yelling at my lawnmower for breaking down again. I got so frustrated, I just went inside and watched infomercials.", 
+       "I was in my backyard, yelling at my lawnmower for breaking down again. I got so frustrated, I just went inside and watched television with my wife.", 
        false, "Stealing a cat? Pfft. I can barely keep my own house in order, let alone go sneaking into someone else’s.");  
        fakeCriminals[1][1] = new Suspect("Rudolph 'Rudy' Connors", 30, "5'9", true, 170, 
-       "I was building a highly efficient automated coffee maker. The calculations required my full attention—far too complex for cat-related distractions.", 
+       "I was building a highly efficient automated coffee maker. My team and I were much to busy for cat-related distractions.", 
        false, "A crime? Statistically, it is far more likely that Mark misplaced his cat than I stole it. Have you checked behind the fridge?");     
        fakeCriminals[1][2] = new Suspect("Rex Sloan", 28, "5'11", true, 185, 
-       "I was at the bar trying to impress some girl with my magic tricks. They didn’t work. Neither did my pickup lines.", 
-       false, "Dude, I’m way too busy with my *own* problems to go around snatching cats. Besides, cats don’t even like me!");      
+       "Bro, I was at the bar with some of my friends from my work all night long.", 
+       false, "Dude, I’m way too busy with my own problems to go around snatching cats. Besides, cats don’t even like me!");      
        fakeCriminals[1][3] = new Suspect("Kate Cha", 26, "5'6", false, 140, 
-       "I was binge-watching a cooking show and attempting to recreate their soufflé. It did not go well. I was cleaning batter off the ceiling all night.", 
+       "I was binge-watching a cooking show and attempting to recreate their soufflé for my boyfriend. It did not go well. I was cleaning batter off the ceiling all night.", 
        false, "Stealing? No way! The only crime I committed was against that poor soufflé.");       
        fakeCriminals[1][4] = new Suspect("Donald Ferguson", 50, "5'10", true, 190, 
        "I was with Amber Bennett  in the bookstore, trying  to find a good book to read.", 

@@ -47,7 +47,14 @@ public class Person {
 
     // description and toString can be changed as needed for visual purposes
     public String description(){
-        return "this person is named: " + name +"\nhas a age of " + age + "\nhas a height of " + height + "\nis male is: " + height + "\nthey weight in at: " + weight + "lbs";
+        String temp = null;
+        if(isMale == true){
+            temp = "is a male";
+        }
+        else{
+            temp = "is a female";
+        }
+        return "this person is named: " + name +"\nhas a age of " + age + "\nhas a height of " + height + "\n"+ temp + "\nthey weight in at: " + weight + "lbs";
     }
 
     public String toString(){

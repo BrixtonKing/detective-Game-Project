@@ -7,7 +7,6 @@ import java.util.Scanner;
 //      perpatrator vs suspect talking choices
 //      "cycling" conversation points
 //      focus on 1 story (invincible)
-//      https://onlnbrd.com/b/HWItNIco
 
 public class Main {
     public static void main (String[] args){
